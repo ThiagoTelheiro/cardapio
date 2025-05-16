@@ -1,12 +1,287 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cardapio</title>
-</head>
-<body>
-    
-</body>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              cinzaClaro: "#F6F7F8",
+              vermelho: "#FF3131",
+              verde: "#54CC0A",
+              alerta: "#FF3131",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Casa do Hambúrguer</title>
+  </head>
+  <body class="h-screen font-inter">
+    <header
+      class="bg-[url(assets/img/bg.png)] bg-no-repeat bg-center bg-cover h-[50%] flex flex-col items-center gap-9 py-12 text-white text-center"
+    >
+      <div>
+        <img src="assets/img/Ellipse 3.png" alt="Logo imagem hamburguer" />
+      </div>
+      <div>
+        <h1 class="text-3xl font-bold">Casa do Hambúrguer</h1>
+        <p class="text-lg mt-1 mb-5">Rua dev sucesso, 12, Campo Grande, MS</p>
+        <span class="bg-verde font-bold text-lg py-2 px-4 rounded"
+          >Seg á Dom - 18:00 as 22:00</span
+        >
+      </div>
+    </header>
+    <main class="px-3 mt-12">
+      <h2 class="text-2xl font-bold text-center">Conheça nosso menu</h2>
+      <ul class="flex flex-col gap-4 py-8">
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex justify-center items-center gap-2">
+          <img
+            class="w-32 h-32 rounded"
+            src="assets/img/hamb-1.png"
+            alt="Imagem Hambúrguer"
+          />
+          <div>
+            <div>
+              <h3 class="text-lg font-bold">Cheese Burger Duplo</h3>
+              <p class="text-base">
+                Pão levinho de fermentação natural da Trigou, burger 160g,
+                queijo prato e maionese da casa
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <span class="font-bold">R$ 35,00</span>
+              <img
+                class="cursor-pointer"
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="flex flex-col gap-4">
+        <li class="w-full flex items-center gap-2">
+          <img
+            class="w-32 h-32"
+            src="assets/img/refri-1.png"
+            alt="Imagem coca cola"
+          />
+          <div class="self-start">
+            <h3 class="text-lg font-bold mb-3">Coca cola Lata</h3>
+            <div class="flex justify-between">
+              <span class="font-bold">R$ 6,00</span>
+              <img
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            class="w-32 h-32"
+            src="assets/img/refri-2.png"
+            alt="Imagem coca cola"
+          />
+          <div class="self-start">
+            <h3 class="text-lg font-bold mb-3">Guarana Lata</h3>
+            <div class="flex justify-between">
+              <span class="font-bold">R$ 6,00</span>
+              <img
+                src="assets/img/cart-plus.png"
+                alt="Logo carrinho de compras"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="bg-">
+        <p>( 1 ) Veja seu carrinho</p>
+        <img src="assets/img/shopping-cart.png" alt="carrinho">
+      </div>
+    </main>
+  </body>
 </html>
